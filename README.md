@@ -4,10 +4,15 @@
 
 ## 학습 결과 
 
-- ***Spectogram 2차원 데이터로 Conv2D Skip Connection Model로 돌렸을 때, Valication Accuracy는 97.96%로 가장 좋았고, 와 Valicatino Loss는 0.078로 가장 낮았다.***
-- ***Wave 1차원 데이터를 Con1D 모델로 돌렸을 때는 Base Model보다 Skip Connection Model의 성능이 0.9285% 높게 나왔다.*** 
-- ***Spectorgram 2차원 데이터를 Con2D 모델로 돌렸을 때에도 Base Model보다 Skip Connection Model의 성능이 0.16% 높게 나왔다.*** 
-- ***하지만 Spectorgram 2차원 데이터를 Con1D 모델로 돌렸을 때에는 Base Model보다 Skip Connection Model의 성능이 0.46% 낮게 나왔다.*** 
+- ***Spectogram 2차원 데이터로 Conv2D Skip Connection Model로 돌렸을 때는***
+    - ***Valication accuracy는 97.96%로 가장 좋았고***
+    - ***Valicatino loss는 0.078로 가장 낮았다.***
+- ***Wave 1차원 데이터를 Con1D 모델로 돌렸을 때는***
+    - ***Skip Connection Model 성능이 Base Model보다 0.9285% 높게 나왔다.*** 
+- ***Spectorgram 2차원 데이터를 Con2D 모델로 돌렸을 때에도***
+    - ***Skip Connection Model 성능이 Base Model보다 0.16% 높게 나왔다.*** 
+- ***Spectorgram 2차원 데이터를 Con1D 모델로 돌렸을 때에는***
+    - ***Skip Connection Model 성능이 Base Model보다 오히려 0.46% 낮게 나왔다.*** 
 
 
 ### (1) 1차원 Wave 데이터 셋 - (50620, 8000)
@@ -24,7 +29,7 @@
   - loss value: ***0.235***
   - accuracy value: ***93.6389%***
 
-![title](Wave1-1.png)
+![image](Wave1-1.png)
 
 ### (1-2) Wave Classification 두번째 모델 구현 - (50620, 8000)
 
@@ -34,7 +39,7 @@
   - loss value: ***0.227***
   - accuracy value: ***94.5674%***
   
-![title](Wave1-2.png)
+![image](Wave1-2.png)
 
 ### (2) 2차원 Spectogram 데이터 셋 - (45553, 130, 126, 1)
 
@@ -50,7 +55,7 @@
   - Best Validation Loss : ***0.082***
   - Best Validation Accuracy : ***97.8%***
 
-![title](Specto2-1.png)
+![image](Specto2-1.png)
 
 ### (2-2) Spectogram Classification Conv2D Skip Connection 모델 구현 - (45553, 130, 126, 1)
 
@@ -60,7 +65,7 @@
   - Best Validation Loss : ***0.078***
   - Best Validation Accuracy : ***97.96%***
   
-![title](Specto2-2.png)
+![image](Specto2-2.png)
 
 ### (3) 2차원 Spectogram 데이터 셋 - (45553, 130, 126)
 - 1차원의 Waveform 데이터가 2차원의 Spectrogram 데이터로 변환함
@@ -75,7 +80,7 @@
   - Best Validation Loss : ***0.1782***
   - Best Validation Accuracy : ***95.19%***
 
-![title](Specto3-1.png)
+![image](Specto3-1.png)
 
 ### (3-2) Spectogram Classification Conv1D Skip Connection 모델 구현 - (45553, 130, 126)
 
@@ -85,4 +90,4 @@
   - Best Validation Loss : ***0.1882***
   - Best Validation Accuracy : ***94.73%***
   
-![title](Specto3-1.png)
+![image](Specto3-1.png)
