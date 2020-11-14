@@ -29,7 +29,7 @@
   - loss value: ***0.235***
   - accuracy value: ***93.6389%***
 
-![image](Wave1-1.png)
+![Wave1-1](https://user-images.githubusercontent.com/39249809/99159000-1502ba80-271c-11eb-9fce-12798f156c1c.png)
 
 ### (1-2) Wave Classification 두번째 모델 구현 - (50620, 8000)
 
@@ -39,7 +39,7 @@
   - loss value: ***0.227***
   - accuracy value: ***94.5674%***
   
-![image](Wave1-2.png)
+![Wave1-2](https://user-images.githubusercontent.com/39249809/99159001-1633e780-271c-11eb-9b55-c9d5c831cfcb.png)
 
 ### (2) 2차원 Spectogram 데이터 셋 - (45553, 130, 126, 1)
 
@@ -55,7 +55,7 @@
   - Best Validation Loss : ***0.082***
   - Best Validation Accuracy : ***97.8%***
 
-![image](Specto2-1.png)
+![Specto2-1](https://user-images.githubusercontent.com/39249809/99159002-16cc7e00-271c-11eb-8196-00f2e9e80277.png)
 
 ### (2-2) Spectogram Classification Conv2D Skip Connection 모델 구현 - (45553, 130, 126, 1)
 
@@ -65,7 +65,7 @@
   - Best Validation Loss : ***0.078***
   - Best Validation Accuracy : ***97.96%***
   
-![image](Specto2-2.png)
+![Specto2-2](https://user-images.githubusercontent.com/39249809/99159003-16cc7e00-271c-11eb-8370-6bdf57f65fa2.png)
 
 ### (3) 2차원 Spectogram 데이터 셋 - (45553, 130, 126)
 - 1차원의 Waveform 데이터가 2차원의 Spectrogram 데이터로 변환함
@@ -80,7 +80,7 @@
   - Best Validation Loss : ***0.1782***
   - Best Validation Accuracy : ***95.19%***
 
-![image](Specto3-1.png)
+![Specto3-1](https://user-images.githubusercontent.com/39249809/99159004-17651480-271c-11eb-91cf-ca00c59a3ecd.png)
 
 ### (3-2) Spectogram Classification Conv1D Skip Connection 모델 구현 - (45553, 130, 126)
 
@@ -90,4 +90,4 @@
   - Best Validation Loss : ***0.1882***
   - Best Validation Accuracy : ***94.73%***
   
-![image](Specto3-1.png)
+![Specto3-2](https://user-images.githubusercontent.com/39249809/99159006-17fdab00-271c-11eb-95f8-fd4d8dc3e7e5.png)
